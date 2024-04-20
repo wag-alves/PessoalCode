@@ -1,0 +1,22 @@
+{
+  "nome": "Wagner",
+  "sobrenome": "Alves",
+  "endereco": [
+    {
+      "rua": "juvino",
+      "numero": 123
+    },
+    {
+      "rua": "subindo",
+      "numero": 456
+    }
+  ],
+  "altura": 1.93,
+  "numeros_preferidos": [
+    3,
+    7,
+    13
+  ],
+  "dev": true,
+  "nada": null
+}

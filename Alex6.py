@@ -13,6 +13,8 @@ def primo(x):
         return True
     else:
         return False
+
+
 valor = int(input(f'Informe um número: '))
 
 print(primo(valor))
@@ -35,4 +37,3 @@ if primo == 'True':
         valor -= 1
 else:
     print(f'O valor informado não é primo')
-        
