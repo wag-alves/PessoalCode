@@ -13,10 +13,11 @@ pessoa = {
     'nada': None,
 }
 
+# Assim eu escrevo
 with open('PessoalCode/aula117.json', 'w') as arquivo:
     json.dump(pessoa, arquivo, indent=2)
 
-
+# Assim eu leio um arquivo
 with open('aula117.json', 'r') as arquivo:
     pessoa = json.load(arquivo)
     print(pessoa)
