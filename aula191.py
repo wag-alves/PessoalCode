@@ -8,7 +8,7 @@ cliente1 = adiciona_clientes('Wagner')
 adiciona_clientes('Larissa', cliente1)
 print(cliente1)
 
-cliente2 = adiciona_clientes('Isis')  # assim tá passando ainda para a mesma lista
+cliente2 = adiciona_clientes('Isis')  # assim tá passando ainda para a mesma lista cliente 1
 print(cliente2)
 
 # Assim é melhor porque ele faz uma lista nova direto
