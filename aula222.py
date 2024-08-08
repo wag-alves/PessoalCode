@@ -30,6 +30,7 @@ class C(B):
         super(C, self).metodo()  # Aqui estou olhando para C e procurando o método no seu "Superior" que é B
         # super().metodo() Isso é a mesma coisa do código de cima, a diferença é que o outro é explicito isso...
         super(B, self).metodo()  # Aqui estou olhando para B e procurando o método no seu "Superior" que é A
+        # A.metodo(self)  Poderia ser assim tembém... mais direto...
         print("C")
 
 

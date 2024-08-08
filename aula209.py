@@ -18,7 +18,7 @@ class Pessoa:
 
     @classmethod
     def sem_idade(cls, nome):
-        return cls(nome, "idade desconhecida", Pessoa.ano)
+        return cls(nome, "idade desconhecida")
 
 
 p1 = Pessoa("wagner", 28)
@@ -30,4 +30,4 @@ print(p2)
 print(p2.nome, p2.idade)
 p3 = Pessoa.sem_idade('Larissa')
 print(p3)
-print(p3.nome, p3.idade, p3.ano)
+print(p3.nome, p3.idade)

@@ -6,17 +6,17 @@ class Cliente:
     def inserir_endereco(self, rua, numero):
         # Por estar sendo criado aqui, quando eu apagar o cliente o endereço vai junto...
         # Python não sabe como representar uma classe, por isso o __dict__
-        self.enderecos.append(Endereco(rua, numero))
+        self.enderecos.append(Endereco(rua, numero).__dict__)
 
     ##### ISSO É UMA ALTERNATIVA PARA NÃO USAR __DICT__ #####
     # OBS: Só esta comentado por causa do dict, ou seja, ou um ou outro
-    def listar_enderecos(self):
-        for endereco in self.enderecos:
-            print(endereco.rua, endereco.numero)
+    # def listar_enderecos(self):
+    #     for endereco in self.enderecos:
+    #         print(endereco.rua, endereco.numero)
 
     # Para conferir se o cliente está relacionado ao endereço, eu posso usar esse seguinte método
     def __del__(self):
-        print("Apagando, ", self.nome)
+        print("Apagando, ", self.nome, self.enderecos)
 
 
 class Endereco:
@@ -40,5 +40,5 @@ print(cliente1.enderecos)
 print()
 print(vars(cliente1))
 
-
+del cliente1
 # cliente1.listar_enderecos()
