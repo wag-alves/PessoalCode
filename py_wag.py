@@ -3,7 +3,9 @@ from pytube.cli import on_progress
 
 link = str(input(f'Copie o link do vídeo: '))
 
-url = YouTube(link,on_progress_callback=on_progress)
+url = YouTube(link,on_progress_callback=on_progress,
+            use_oauth=False,
+            allow_oauth_cache=True)
 
 query = url.streams.filter(progressive=True)
 
